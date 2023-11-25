@@ -86,10 +86,10 @@ comments_df.write.parquet(
 )
 
 #########################################################################################
-submissions_df = spark.read.schema(submissions_schema).parquet(
+submissions_df = spark.read.parquet(
     "/Users/moheeb/Documents/Personal_Project_ideas/crypto_data_project/submissions.parquet"
 )
-comments_df = spark.read.schema(comments_schema).parquet(
+comments_df = spark.read.parquet(
     "/Users/moheeb/Documents/Personal_Project_ideas/crypto_data_project/comments.parquet"
 )
 
@@ -98,6 +98,9 @@ print(submissions_df)
 submissions_df.show()
 print(comments_df)
 comments_df.show()
+submissions_df.select("Submission ID", "Author", "sentiment").show()
+comments_df.select("Comment ID", "Author", "sentiment").show()
+
 
 #########################################################################################
 
