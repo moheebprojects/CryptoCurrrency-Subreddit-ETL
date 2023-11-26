@@ -8,7 +8,6 @@ from prefect import task
 from datetime import datetime
 from output_manager import OutputManager
 from pathlib import Path
-from textblob import TextBlob
 from pyspark.sql import functions as F
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType
 
@@ -96,11 +95,11 @@ def comments_fetcher(
 
 
 reddit_api = web_scrape_crypto_subreddit(
-    client_id="McMt3gyqN6aLSitkzv47EQ",
-    client_secret="Dy_QMRCAmpN1WOQ9SOyaN0HqkOWBEw",
-    user_agent="scraperr 1.0 by /u/TheSilentData",
-    reddit_username="TheSilentData",
-    password="Yemen6987",
+    client_id="client_id",
+    client_secret="cleint_secret",
+    user_agent="user_agent",
+    reddit_username="username",
+    password="password",
 )
 
 output_manager = OutputManager(
