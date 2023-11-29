@@ -1,6 +1,6 @@
 # CryptoCurrrency-Subreddit-ETL
 
-#Project Overview
+# Project Overview
 Purpose:
 The project aims to analyze community sentiment and discussions around the CryptoCurrency Subbredit community on Reddit. The goal is to extract posts and comments from the CryptoCurrency subreddit, apply sentiment analysis, and organize the data for insights and visualization.
 
