@@ -1,45 +1,48 @@
 # CryptoCurrrency-Subreddit-ETL
 
 # Project Overview
-Purpose:
-The project aims to analyze the CryptoCurrency subreddit community sentiment and discussions around the CryptoCurrency overall market. The goal is to extract posts and comments from the CryptoCurrency subreddit, apply sentiment analysis, and organize the data for insights and visualization.
+## Purpose:
+This project is designed to capture and analyze online discussions about cryptocurrency, specifically from a designated subreddit. It aims to extract valuable insights from both submissions (original posts) and comments to gauge community sentiment, identify influential discussions, and understand engagement patterns within the cryptocurrency subreddit.
 
-## Key Objectives:
+## Key Questions:
 
-Extract data from the CryptoCurrency subreddit to analyze community sentiment.
-Determine patterns and trends in discussions related to cryptocurrency.
-Understand the correlation between post engagement (upvotes, comments) and sentiment.
+What are the prevailing sentiments in both submissions and comments in the cryptocurrency subreddit?
+Which submissions are attracting the most engagement in terms of comments and upvotes?
+How does the sentiment expressed in comments correlate with that in the submissions?
+What topics or submissions are driving the most active discussions?
 
 ## Technology Stack:
 
-PRAW API: To scrape posts and comments from the CryptoCurrency subreddit community.
-Pandas: For data manipulation and transformation of the scraped data.
-PySpark: To handle large datasets and perform data processing and sentiment analysis.
-TextBlob: An NLP library used for calculating sentiment scores for both posts and comments.
-SQL Queries in PySpark: For data querying and aggregation from the processed datasets.
-Local Storage: Storing processed data in Parquet format for efficient retrieval and analysis.
+PRAW API: For scraping detailed data from the cryptocurrency subreddit.
+Pandas: For initial data processing and organization into DataFrames.
+PySpark: Utilized for handling larger datasets, performing sentiment analysis, and managing complex data processing tasks.
+TextBlob: An NLP library for performing sentiment analysis on the textual content of submissions and comments.
+Parquet File Format: For efficient storage and retrieval of the processed data.
+Pipeline Architecture and Data Structure
 
-# Pipeline Architecture
+## Data Extraction:
 
-### Data Extraction:
+Scrape data from the subreddit using PRAW API, focusing on two types of content: submissions and comments.
+Extract key information such as IDs, titles, authors, content, upvotes, downvotes, timestamps, and URLs.
 
-Utilize PRAW API to fetch posts and comments from the CryptoCurrency subreddit.
-Extract relevant data such as post IDs, titles, authors, comments, upvotes, downvotes, timestamps, and URLs.
+## Data Transformation and Sentiment Analysis:
 
-### Data Processing:
+Convert the raw data into Pandas DataFrames for preprocessing.
+Transition to PySpark DataFrames for scalable data handling.
+Apply TextBlob to perform sentiment analysis, categorizing the content into positive, negative, or neutral sentiments.
 
-Convert the raw data into structured formats (DataFrames) using Pandas.
-Transition from Pandas DataFrames to PySpark DataFrames for more robust processing.
-Define schemas for submissions and comments to structure the data appropriately in PySpark.
+## Submissions Table:
 
-### Sentiment Analysis:
+Contains structured data about subreddit posts, including Submission_ID, Title, Author, Selftext, Up_Votes, Down_Votes, Created_UTC, URL, and the sentiment of each post.
+Provides a comprehensive overview of individual posts and their reception in the subreddit.
 
-Implement sentiment analysis on text data (posts and comments) using the TextBlob library.
-Categorize sentiment as positive, negative, or neutral based on the polarity score.
+## Comments Table:
 
-### Data Storage:
+Comprises detailed data on user comments, including Submission_ID (linking to the respective post), Comment_ID, Author, Comment content, Up_Votes, Down_Votes, Created_UTC, URL, and the sentiment of each comment.
+Offers insights into community reactions and discussions pertaining to specific posts.
+Data Storage:
 
-Store the processed data with sentiment analysis into Parquet files for efficient storage and retrieval.
+Processed data is stored in Parquet format, balancing efficiency in both storage and access.
 
 ### Data Querying and Aggregation:
 
