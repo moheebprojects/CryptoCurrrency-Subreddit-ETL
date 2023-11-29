@@ -2,17 +2,17 @@
 
 #Project Overview
 Purpose:
-The project aims to analyze community sentiment and discussions around a specific topic (assumed to be cryptocurrency) on Reddit. The goal is to extract posts and comments from a designated subreddit, apply sentiment analysis, and organize the data for insights and visualization.
+The project aims to analyze community sentiment and discussions around the CryptoCurrency Subbredit community on Reddit. The goal is to extract posts and comments from the CryptoCurrency subreddit, apply sentiment analysis, and organize the data for insights and visualization.
 
 ## Key Objectives:
 
-Extract subreddit data to analyze community sentiment.
+Extract data from the CryptoCurrency subreddit to analyze community sentiment.
 Determine patterns and trends in discussions related to cryptocurrency.
 Understand the correlation between post engagement (upvotes, comments) and sentiment.
 
 ## Technology Stack:
 
-PRAW API: To scrape posts and comments from the designated subreddit.
+PRAW API: To scrape posts and comments from the CryptoCurrency subreddit community.
 Pandas: For data manipulation and transformation of the scraped data.
 PySpark: To handle large datasets and perform data processing and sentiment analysis.
 TextBlob: An NLP library used for calculating sentiment scores for both posts and comments.
@@ -23,7 +23,7 @@ Local Storage: Storing processed data in Parquet format for efficient retrieval 
 
 ### Data Extraction:
 
-Utilize PRAW API to fetch posts and comments from the targeted subreddit.
+Utilize PRAW API to fetch posts and comments from the CryptoCurrency subreddit.
 Extract relevant data such as post IDs, titles, authors, comments, upvotes, downvotes, timestamps, and URLs.
 
 ### Data Processing:
