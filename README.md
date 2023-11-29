@@ -2,7 +2,7 @@
 
 # Project Overview
 Purpose:
-The project aims to analyze community sentiment and discussions around the CryptoCurrency Subbredit community on Reddit. The goal is to extract posts and comments from the CryptoCurrency subreddit, apply sentiment analysis, and organize the data for insights and visualization.
+The project aims to analyze the CryptoCurrency subreddit community sentiment and discussions around the CryptoCurrency overall market. The goal is to extract posts and comments from the CryptoCurrency subreddit, apply sentiment analysis, and organize the data for insights and visualization.
 
 ## Key Objectives:
 
