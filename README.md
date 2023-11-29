@@ -50,7 +50,7 @@ Offers insights into community reactions and discussions pertaining to specific 
 
 Processed data is stored in Parquet format, balancing efficiency in both storage and access.
 
-### Data Querying and Aggregation:
+## Data Querying and Aggregation:
 
 Utilize PySpark SQL queries to extract insights from the data.
 Perform SQL operations to identify key authors, engagement metrics, and sentiment distributions.
