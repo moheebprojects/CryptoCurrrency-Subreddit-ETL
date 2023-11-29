@@ -50,7 +50,7 @@ Offers insights into community reactions and discussions pertaining to specific 
 
 Processed data is stored in Parquet format, balancing efficiency in both storage and access.
 
-# Data Querying and Aggregation:
+## Data Querying and Aggregation:
 
 In this project, I utilized PySpark SQL queries to analyze data extracted from the cryptocurrency subreddit. The queries were designed to provide insights into community sentiments, engagement patterns, and controversial topics. The data was obtained from the submissions posted onto the CryptoCurrency subrredit and the comments on each post submitted.
 
