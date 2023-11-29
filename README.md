@@ -2,7 +2,7 @@
 
 # Project Overview
 ## Purpose:
-This project is designed to capture and analyze online discussions about cryptocurrency, specifically from a designated subreddit. It aims to extract valuable insights from both submissions (original posts) and comments to gauge community sentiment, identify influential discussions, and understand engagement patterns within the cryptocurrency subreddit.
+This project is designed to capture and analyze online discussions about cryptocurrency, in the CryptoCurrency subreddit. It aims to extract valuable insights from both submissions (original posts) and comments to gauge community sentiment, identify influential discussions, and understand engagement patterns within the cryptocurrency subreddit.
 
 ## Key Questions:
 
