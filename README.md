@@ -50,15 +50,8 @@ Offers insights into community reactions and discussions pertaining to specific 
 
 Processed data is stored in Parquet format, balancing efficiency in both storage and access.
 
-## Data Querying and Aggregation:
+# Data Querying and Aggregation:
 
-Utilize PySpark SQL queries to extract insights from the data.
-Perform SQL operations to identify key authors, engagement metrics, and sentiment distributions.
-Insights and Visualization
-The project is set up to enable the creation of visualizations and dashboards based on the processed and queried data. (Note: Specific details on visualization tools or dashboards were not provided in the code.)
+In this project, I utilized PySpark SQL queries to analyze data extracted from the cryptocurrency subreddit. The queries were designed to provide insights into community sentiments, engagement patterns, and controversial topics. The data was obtained from the submissions posted onto the CryptoCurrency subrredit and the comments on each post submitted.
 
-# Further Development
-The SQL queries can be expanded and modified for more detailed insights.
-Integration with visualization tools like Looker Studio, Tableau, or a custom dashboard can be implemented for better data representation.
-The pipeline can be enhanced with additional features such as data profiling, monitoring, and CI/CD tooling for automation.
-This summary outlines the general structure and objectives of your project, detailing the technological components and the steps taken for data processing and analysis.
+
