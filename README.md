@@ -13,11 +13,15 @@ What topics or submissions are driving the most active discussions?
 
 ## Technology Stack:
 
-PRAW API: For scraping detailed data from the cryptocurrency subreddit.
-Pandas: For initial data processing and organization into DataFrames.
-PySpark: Utilized for handling larger datasets, performing sentiment analysis, and managing complex data processing tasks.
-TextBlob: An NLP library for performing sentiment analysis on the textual content of submissions and comments.
-Parquet File Format: For efficient storage and retrieval of the processed data.
+- PRAW API: For scraping detailed data from the cryptocurrency subreddit.
+  
+- Pandas: For initial data processing and organization into DataFrames.
+  
+- PySpark: Utilized for handling larger datasets, performing sentiment analysis, and managing complex data processing tasks.
+
+- TextBlob: An NLP library for performing sentiment analysis on the textual content of submissions and comments.
+
+- Parquet File Format: For efficient storage and retrieval of the processed data.
 
 ## Pipeline Architecture and Data Structure
 
