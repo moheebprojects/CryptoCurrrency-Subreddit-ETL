@@ -7,8 +7,11 @@ This project is designed to capture and analyze online discussions about cryptoc
 ## Key Questions:
 
 What are the prevailing sentiments in both submissions and comments in the cryptocurrency subreddit?
+
 Which submissions are attracting the most engagement in terms of comments and upvotes?
+
 How does the sentiment expressed in comments correlate with that in the submissions?
+
 What topics or submissions are driving the most active discussions?
 
 ## Technology Stack:
