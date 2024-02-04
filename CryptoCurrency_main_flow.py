@@ -44,7 +44,7 @@ comments_schema = StructType(
     ]
 )
 
-# Assuming `submissions_list` and `comments_list` are your scraped data
+# Using submissions_list` and `comments_list` scraped data
 submissions_rdd = spark.sparkContext.parallelize(submissions_list)
 comments_rdd = spark.sparkContext.parallelize(comments_list)
 
