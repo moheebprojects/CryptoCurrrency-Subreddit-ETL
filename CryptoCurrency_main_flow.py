@@ -74,15 +74,14 @@ comments_df = comments_df.withColumn("sentiment", sentiment_udf(col("Comment")))
 # Using parquet (open source) for columnar storage file format.
 
 submissions_df.write.parquet(
-    "/Users/moheeb/Documents/Personal_Project_ideas/crypto_data_project/submissions.parquet",
+    ".../submissions.parquet",
     mode="overwrite",
 )
 comments_df.write.parquet(
-    "/Users/moheeb/Documents/Personal_Project_ideas/crypto_data_project/comments.parquet",
+    ".../comments.parquet",
     mode="overwrite",
 )
 
-#########################################################################################
 submissions_df = spark.read.parquet(
     "/Users/moheeb/Documents/Personal_Project_ideas/crypto_data_project/submissions.parquet"
 )
@@ -99,7 +98,7 @@ submissions_df.select("Submission_ID", "Author", "sentiment").show()
 comments_df.select("Comment_ID", "Author", "sentiment").show()
 
 
-#########################################################################################
+
 
 
 if __name__ == "__main__":
