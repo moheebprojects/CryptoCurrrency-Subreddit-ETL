@@ -83,10 +83,10 @@ comments_df.write.parquet(
 )
 
 submissions_df = spark.read.parquet(
-    "/Users/moheeb/Documents/Personal_Project_ideas/crypto_data_project/submissions.parquet"
+    "...submissions.parquet"
 )
 comments_df = spark.read.parquet(
-    "/Users/moheeb/Documents/Personal_Project_ideas/crypto_data_project/comments.parquet"
+    ".../comments.parquet"
 )
 
 
